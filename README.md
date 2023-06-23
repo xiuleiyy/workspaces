@@ -17,10 +17,10 @@ add the code to interact with the SDK client based on your use case.
 
 ## WorkSpaces Core APIs
 
-* RegisterWorkSpaceDirectory：将AD注册给WorkSpaces服务，添加至少一个用户（此步骤暂时通过控制台完成）
-* ImportWorkspaceImage：将EC2 Image 导入WorkSpaces服务
-* CreateWorkspaceBundle：依据导入的Workspace 映像创建Workspace 捆绑包
-* CreateWorkspaces：依据Workspace捆绑包创建Workspace
+* RegisterWorkSpaceDirectory：Register AD to Workspaces service, add an user.
+* ImportWorkspaceImage：Import the EC2 ami to Workspaces image.
+* CreateWorkspaceBundle：Create Workspaces bundle with the Workspaces image.
+* CreateWorkspaces：Create Workspace base on the Worksapces bundle.
 
 ## Connect to the Workspace
 
