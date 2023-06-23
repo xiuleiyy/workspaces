@@ -1,4 +1,6 @@
-# App
+# Workspaces
+
+Sample code for Amazon Workspaces core SDK APIs.
 
 This project contains an AWS Lambda maven application with [AWS Java SDK 2.x](https://github.com/aws/aws-sdk-java-v2) dependencies.
 
@@ -12,6 +14,17 @@ This project contains an AWS Lambda maven application with [AWS Java SDK 2.x](ht
 
 The generated function handler class just returns the input. The configured AWS Java SDK client is created in `DependencyFactory` class and you can 
 add the code to interact with the SDK client based on your use case.
+
+## WorkSpaces Core APIs
+
+* RegisterWorkSpaceDirectory：将AD注册给WorkSpaces服务，添加至少一个用户（此步骤暂时通过控制台完成）
+* ImportWorkspaceImage：将EC2 Image 导入WorkSpaces服务
+* CreateWorkspaceBundle：依据导入的Workspace 映像创建Workspace 捆绑包
+* CreateWorkspaces：依据Workspace捆绑包创建Workspace
+
+## Connect to the Workspace
+
+You can use RDP client to connect to the created Workspace.
 
 #### Building the project
 ```
